@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+//we have used semantic  ui for  styling, refer index.html for more [line: 17] used cdn link to link semantic ui
+
+
+import React from 'react';
 import './App.css';
+import Header from "./component/Header";
+import AddContact from "./component/AddContact";
+import ContactList  from "./component/ContactList";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* THis is how we show the components in the react */}
+    <Header/> 
+    <AddContact/>
+    {/* <ContactList/> */}
+
+  </>
   );
 }
 
